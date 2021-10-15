@@ -11,12 +11,12 @@ export const ThemeContext = React.createContext({
 
 const ThemeProvider = ({children}) => {
   const theme = useSelector(({theme})=> theme.themeShade);
-  const isDark = theme === 'dark'
+  const isDark = theme === 'dark';
   const defaultTheme = {
         isDark,
         // Chaning color schemes according to theme
         colors: isDark ? darkColors : lightColors,
-}  ;
+   };
   
   return (
     <ThemeContext.Provider value={defaultTheme}>

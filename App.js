@@ -1,9 +1,9 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from './store/store';
-import ThemeProvider from './providers/themeProvider';
-import Wrapper from './views';
+import { store, persistor } from './src/store/store';
+import ThemeProvider from './src/providers/themeProvider';
+import Wrapper from './src/views';
 
 export default function App() {
   return (

@@ -1,3 +1,3 @@
 export const lightColors ={ 
-    bg:"#fff",
+    bg: "#fff",
  }
