@@ -1,3 +1,4 @@
 export const darkColors ={ 
-   bg:"#800080",
+   bg:"#151518",
+   headerBg: '#303237'
 }

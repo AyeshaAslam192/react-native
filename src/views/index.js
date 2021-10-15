@@ -1,17 +1,14 @@
 import React from 'react';
 import { View } from 'react-native';
 import { useTheme } from "../providers/themeProvider";
-import ThemeSwitcher from '../components/common/Smart/themeSwitcher';
-import ScreenWrapper from '../components/layouts/ScreenWrapper';
+import StackNavigator from '../navigators/stackNavigator';
 
 export default function Wrapper() {
   const { colors } = useTheme();
   
   return (
     <View style={{backgroundColor: colors.bg, flex: 1 }}>
-      <ScreenWrapper>
-         <ThemeSwitcher/>
-      </ScreenWrapper>
+          <StackNavigator/>
      </View>
   );
 }
