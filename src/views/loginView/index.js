@@ -1,11 +1,10 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-
-
+import { View } from 'react-native';
+import AppForm from '../../components/common/Presentational/AppForm';
 
 const LoginView = () => (
     <View>
-        {/* <Text>abc</Text> */}
+        <AppForm />
     </View>
 )
    
