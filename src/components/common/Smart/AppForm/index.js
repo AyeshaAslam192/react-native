@@ -5,7 +5,7 @@ import ScreenWrapper from '../../../layouts/ScreenWrapper';
 import styles from './AppForm.styles';
 import AppTextInput from '../../Presentational/AppTextInput';
 
-function AppForm() {
+function AppForm({navigation}) {
     const { colors } = useTheme();
 
     return (
@@ -26,7 +26,7 @@ function AppForm() {
                 />
                 <TouchableOpacity 
                     style={styles.submitBtn} 
-                    onPress={() => alert("Logged In!!!")} 
+                    onPress={() => navigation.navigate('Drawer')} 
                 >
                     <Text style={styles.submitText}>SUBMIT</Text>
                 </TouchableOpacity>
