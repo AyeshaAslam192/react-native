@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTheme } from "../../../../providers/themeProvider";
 import { Text, TouchableOpacity, View } from 'react-native';
-import ScreenWrapper from '../../../layouts/ScreenWrapper';;
-import styles from "./AppForm.styles"
-import AppTextInput from "../AppTextInput"
+import ScreenWrapper from '../../../layouts/ScreenWrapper';
+import styles from './AppForm.styles';
+import AppTextInput from '../../Presentational/AppTextInput';
 
 function AppForm() {
     const { colors } = useTheme();

@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { useTheme } from "../providers/themeProvider";
 import StackNavigator from '../navigators/stackNavigator';
 import ThemeSwitcher from '../components/common/Smart/themeSwitcher';
-import AppForm from '../components/common/Presentational/AppForm';
+import AppForm from '../components/common/Smart/AppForm';
 import ScreenWrapper from '../components/layouts/ScreenWrapper';
 
 export default function Wrapper() {

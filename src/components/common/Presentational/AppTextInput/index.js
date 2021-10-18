@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextInput } from 'react-native';
-import styles from "./AppTextInput.styles"
+import styles from './AppTextInput.styles';
 
 function AppTextInput({placeholder, password, txtColor, placeholderColor}) {
     return (

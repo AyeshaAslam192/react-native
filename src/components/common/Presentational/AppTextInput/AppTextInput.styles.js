@@ -8,7 +8,7 @@ export default styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 30,
         elevation: 100,
-        fontSize: 20,
+        fontSize: 16,
         marginBottom: 20,
     }
 })
