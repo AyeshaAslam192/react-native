@@ -4,4 +4,5 @@ export const lightColors ={
     formTxt: "#000",
     placeholderTxt: "#78818b",
     formHeader: "#000",
+    drawerBg: "#fff",
  }

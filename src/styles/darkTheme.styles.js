@@ -4,4 +4,5 @@ export const darkColors ={
    formTxt: "#fff",
    placeholderTxt: "#aeb1b8",
    formHeader: "#fff",
+   drawerBg: "#1e1f22",
 }

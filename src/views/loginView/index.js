@@ -2,9 +2,9 @@ import React from 'react';
 import { View } from 'react-native';
 import AppForm from '../../components/common/Smart/AppForm';
 
-const LoginView = () => (
+const LoginView = ({navigation}) => (
     <View>
-        <AppForm />
+        <AppForm navigation={navigation}/>
     </View>
 )
    
