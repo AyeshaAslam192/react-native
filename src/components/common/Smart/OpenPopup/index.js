@@ -3,7 +3,7 @@ import { Text, View, TouchableWithoutFeedback, } from 'react-native';
 import styles from "./OpenPopup.styles"
 import AppPopup from '../../../shared/popups/AppPopup';
 
-function OpenPopup() {
+const OpenPopup = () => {
     const [modalVisible, setModalVisisble] = useState(false);
     return (
         <>

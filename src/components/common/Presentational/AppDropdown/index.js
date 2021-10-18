@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 // import DropDown from "react-native-paper-dropdown";
 
-function AppDropdown() {
+const AppDropdown = () => {
     const [showMultiSelectDropDown, setShowMultiSelectDropDown] = useState(false);
     const [colors, setColors] = useState("");
     const colorList = [

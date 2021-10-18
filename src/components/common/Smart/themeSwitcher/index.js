@@ -12,8 +12,7 @@ export default function ThemeSwitcher() {
   useEffect(()=>{
     if(toggleTheme){
       dispatch(switchTheme('dark'));
-    }
-    else{
+    } else{
       dispatch(switchTheme('light'));
     }
   }, [toggleTheme])

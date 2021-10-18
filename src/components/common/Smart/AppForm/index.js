@@ -6,7 +6,7 @@ import ScreenWrapper from '../../../layouts/ScreenWrapper';
 import styles from './AppForm.styles';
 import AppTextInput from '../../Presentational/AppTextInput';
 
-function AppForm({navigation}) {
+const AppForm = () => {
     const { colors } = useTheme();
     const setConstants = detectLang().t;
 
