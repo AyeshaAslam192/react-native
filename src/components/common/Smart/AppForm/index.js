@@ -9,7 +9,6 @@ import AppTextInput from '../../Presentational/AppTextInput';
 const AppForm = ({navigation}) => {
     const { colors } = useTheme();
     const setConstants = detectLang().t;
-
     return (
         <ScreenWrapper>
             <Text style={[styles.formHeading, {color: colors.formHeader}]}>{setConstants('FORM')}</Text>

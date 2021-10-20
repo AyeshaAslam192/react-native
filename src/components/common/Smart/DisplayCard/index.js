@@ -15,7 +15,7 @@ const DisplayCards = () => {
         <View>
             {
                 mockData.map(card => (
-                    <AppCard title={card.title} subtitle={card.subtitle} img={card.img} />
+                    <AppCard key={card.title} title={card.title} subtitle={card.subtitle} img={card.img} />
                 ))
             }
         </View>

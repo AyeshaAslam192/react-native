@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeView from '../views/homeView/homeView';
+import DisplayCards from '../components/common/Smart/DisplayCard';
 import { useTheme } from '../providers/themeProvider';
 import ThemeSwitcher from '../components/common/Smart/themeSwitcher';
 import { createDrawerNavigator } from '@react-navigation/drawer'
@@ -14,19 +15,20 @@ const DrawerNavigator = () => {
                 drawerStyle: {
                 backgroundColor: colors.drawerBg,
                 },
+                headerStyle: {backgroundColor: colors.headerBg},
+                headerTintColor: '#fff', 
+                headerRight: () => (
+                   <ThemeSwitcher/>
+               ),
             }}
         >
            <Drawer.Screen 
              name="Home" 
              component={HomeView}
-             options={{ 
-                 drawerLabel: 'Home',
-                 headerStyle: {backgroundColor: colors.headerBg},
-                 headerTintColor: '#fff', 
-                 headerRight: () => (
-                    <ThemeSwitcher/>
-                ),
-                }} 
+           />
+           <Drawer.Screen 
+             name="Cards" 
+             component={DisplayCards}
            />
         </Drawer.Navigator>
     )
