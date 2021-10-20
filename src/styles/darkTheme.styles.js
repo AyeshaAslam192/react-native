@@ -5,4 +5,6 @@ export const darkColors ={
    placeholderTxt: "#aeb1b8",
    formHeader: "#fff",
    drawerBg: "#1e1f22",
+   cardBg: "#303237",
+   cardTxt: "#fff",
 }
