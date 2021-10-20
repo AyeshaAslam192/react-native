@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, View, } from 'react-native';
 import { useTheme } from "../../../../providers/themeProvider";
 import styles from "./AppCard.styles";
 

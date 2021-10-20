@@ -4,6 +4,7 @@ import DisplayCards from '../components/common/Smart/DisplayCard';
 import { useTheme } from '../providers/themeProvider';
 import ThemeSwitcher from '../components/common/Smart/themeSwitcher';
 import { createDrawerNavigator } from '@react-navigation/drawer'
+import AppDropdown from '../components/common/Smart/AppDropdown';
 
 const Drawer = createDrawerNavigator();
 
@@ -29,6 +30,10 @@ const DrawerNavigator = () => {
            <Drawer.Screen 
              name="Cards" 
              component={DisplayCards}
+           />
+            <Drawer.Screen 
+             name="Dropdown" 
+             component={AppDropdown}
            />
         </Drawer.Navigator>
     )
