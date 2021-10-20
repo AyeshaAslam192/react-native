@@ -1,16 +1,18 @@
 import React from 'react';
 import { useTheme } from "../../../../providers/themeProvider";
 import { Text, TouchableOpacity, View } from 'react-native';
+import { detectLang } from '../../../../helpers/localization';
 import ScreenWrapper from '../../../layouts/ScreenWrapper';
 import styles from './AppForm.styles';
 import AppTextInput from '../../Presentational/AppTextInput';
 
 function AppForm({navigation}) {
     const { colors } = useTheme();
+    const setConstants = detectLang().t;
 
     return (
         <ScreenWrapper>
-            <Text style={[styles.formHeading, {color: colors.formHeader}]}>Form</Text>
+            <Text style={[styles.formHeading, {color: colors.formHeader}]}>{setConstants('FORM')}</Text>
             <View style={styles.formView}>
                 <AppTextInput 
                     placeholder="Email" 
