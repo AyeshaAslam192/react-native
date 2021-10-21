@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var LOGIN_CREDENTIALS = 'LOGIN_CREDENTIALS';","map":{"version":3,"sources":["/home/ayesha/react-native-demo/react-native/src/store/login/loginActionsTypes.js"],"names":["LOGIN_CREDENTIALS"],"mappings":"AAAA,OAAO,IAAMA,iBAAiB,GAAG,mBAA1B","sourcesContent":["export const LOGIN_CREDENTIALS = 'LOGIN_CREDENTIALS';"]},"metadata":{},"sourceType":"module"}
