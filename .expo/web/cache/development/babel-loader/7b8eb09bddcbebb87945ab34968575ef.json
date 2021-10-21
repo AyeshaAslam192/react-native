@@ -1,0 +1,1 @@
+{"ast":null,"code":"var theme = 'theme';\nexport { theme };","map":{"version":3,"sources":["/home/ayesha/react-native-demo/react-native/src/store/theme/themeActionsTypes.js"],"names":["theme"],"mappings":"AAAA,IAAOA,KAAK,GAAG,OAAf;AAEA,SACIA,KADJ","sourcesContent":["const  theme = 'theme';\n\nexport {\n    theme,\n };"]},"metadata":{},"sourceType":"module"}

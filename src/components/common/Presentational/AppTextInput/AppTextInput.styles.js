@@ -9,6 +9,6 @@ export default styles = StyleSheet.create({
         borderRadius: 30,
         elevation: 100,
         fontSize: 16,
-        marginBottom: 20,
+        marginTop: 20,
     }
 })
