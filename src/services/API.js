@@ -3,9 +3,8 @@ import { BACKEND_URL, TOKEN } from '@env'
 
 class API {
   constructor() {
-    this.baseUrl = BACKEND_URL;
+    this.baseUrl = "https://nodejs-heroku-login.herokuapp.com/api/auth";
     this.axios = axios.create();
-    this.axios.defaults.headers.Authorization = `Token ${TOKEN}`;
     this.axios.interceptors.response.use((resp) => resp.data, (error) => Promise.reject(error));
   }
 
@@ -17,7 +16,9 @@ class API {
   }
 
   post(endpoint, data) {
-    return this.axios.post(`${this.baseUrl}/${endpoint}`, data);
+    const config = { headers: { 'Content-Type': 'application/json' } };
+    console.log(endpoint, data, this.baseUrl)
+    return this.axios.post(`${this.baseUrl}/${endpoint}`, data, config);
   }
 
   put(endpoint, data) {

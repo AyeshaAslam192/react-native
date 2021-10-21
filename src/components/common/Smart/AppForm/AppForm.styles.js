@@ -8,7 +8,6 @@ export default styles = StyleSheet.create({
         fontWeight: "bold",
     },
     formView: {
-        marginTop: 40,
         paddingHorizontal: 20
     },
     submitBtn: {
@@ -17,10 +16,16 @@ export default styles = StyleSheet.create({
         backgroundColor: "dodgerblue",
         alignItems: "center",
         justifyContent: "center",
+        marginTop: 20,
     },
     submitText: {
         fontSize: 20,
         fontWeight: "bold",
         color: "white"
+    },
+    errorText: {
+        color: 'red', 
+        marginTop: 0, 
+        marginLeft: 10
     }
 })
