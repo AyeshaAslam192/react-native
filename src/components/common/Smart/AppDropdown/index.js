@@ -17,15 +17,13 @@ const AppDropdown = () => {
       open={open}
       value={value}
       items={items}
-      showArrowIcon={false}
       setOpen={setOpen}
       setValue={setValue}
       setItems={setItems}
       style={{backgroundColor: colors.cardBg, borderColor: colors.cardTxt}}
-      containerStyle={ [styles.dropdownStyle, { backgroundColor: colors.cardBg }] }
+      containerStyle={ styles.dropdownStyle }
       dropDownContainerStyle={{backgroundColor: colors.cardBg, borderColor: colors.cardTxt}}
       textStyle = {{ color: colors.cardTxt }}
-      modalProps={{ animationType: "fade" }}
     />
   );
 }
