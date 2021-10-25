@@ -9,6 +9,7 @@ const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
     const { colors } = useTheme();
+
     return(
             <Stack.Navigator>
                 <Stack.Screen 
@@ -21,7 +22,7 @@ const StackNavigator = () => {
                             <ThemeSwitcher/>
                         ),}}
                 />
-                 <Stack.Screen 
+                <Stack.Screen 
                     name="Drawer"
                     component={DrawerNavigator} 
                     options={{
@@ -31,7 +32,8 @@ const StackNavigator = () => {
                         headerRight: () => (
                             <ThemeSwitcher/>
                         ),}}
-                    />
+                />
+                 
             </Stack.Navigator>
     )
 };

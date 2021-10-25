@@ -26,12 +26,12 @@ const AppForm = ({navigation}) => {
         { 
             setPasswordError('');
             setEmailError('');
-            // const user = {
-            //     email: email,
-            //     password: password,
-            // }
-            navigation.navigate("Drawer");
-        //    dispatch(fetchLoginCredentials(user));
+            const user = {
+                email: email,
+                password: password,
+            }
+            // navigation.navigate("Drawer");
+           dispatch(fetchLoginCredentials(user));
         }
         
    }

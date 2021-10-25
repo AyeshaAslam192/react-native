@@ -17,7 +17,6 @@ class API {
 
   post(endpoint, data) {
     const config = { headers: { 'Content-Type': 'application/json' } };
-    console.log(endpoint, data, this.baseUrl)
     return this.axios.post(`${this.baseUrl}/${endpoint}`, data, config);
   }
 

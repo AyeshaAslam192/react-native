@@ -1,1 +1,2 @@
 export const LOGIN_CREDENTIALS = 'LOGIN_CREDENTIALS';
+export const VERIFY_TOKEN = 'VERIFY_TOKEN';

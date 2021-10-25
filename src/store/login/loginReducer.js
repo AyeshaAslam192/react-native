@@ -1,7 +1,8 @@
-import { LOGIN_CREDENTIALS } from "./loginActionsTypes";
+import { LOGIN_CREDENTIALS, VERIFY_TOKEN } from "./loginActionsTypes";
   
   const initialState = {
     LoginCredentials: '',
+    tokenVerfied: false,
   };
   
   const LoginReducer = (state = initialState, action) => {
@@ -10,6 +11,12 @@ import { LOGIN_CREDENTIALS } from "./loginActionsTypes";
         return {
           ...state,
           LoginCredentials: action.payload,
+        };
+      }
+      case VERIFY_TOKEN: {
+        return {
+          ...state,
+          tokenVerfied: action.payload,
         };
       }
       default: {

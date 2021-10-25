@@ -6,12 +6,23 @@ class Login  extends API {
         return new Promise((resolve, reject) => {
           super
             .post('login', data).then((resp) => { 
-                console.log(resp);
                 resolve(resp)
              })
             .catch((error) => 
-            {console.log(error.response)
+            {
                 reject(error)});
+        });
+    }
+    verifyToken(data) {
+        return new Promise((resolve) => {
+          super
+            .post('is-verified', data).then((resp) => { 
+                resolve(true)
+             })
+            .catch(() => 
+            {
+                resolve(false)
+            });
         });
     }
   
